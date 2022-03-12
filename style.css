@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-image: url(images/wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+.glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgb(36, 53, 72, 0.7),
+    rgb(14, 17, 16, 0.3)
+  );
+  backdrop-filter: blur(0.2rem);
+  z-index: 2;
+  width: 100vh;
+  height: 80vh;
+  border-radius: 5%;
+}
+
+img {
+  width: 100%;
+  height: 28vh;
+}
+
+.titulo {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #eee;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+H1 {
+  margin-bottom: 5px;
+}
+
+.barra {
+  width: 300px;
+  height: 8px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+progress {
+  width: 0%;
+  height: 8px;
+  background-color: rgb(122, 122, 122);
+}
+
+.botao {
+  background-color: rgb(204, 204, 204);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.tempo {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  color: #eee;
+}
+
+.botao-play,
+.botao-pause {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.seta-anterior,
+.seta-proximo {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.botao-pause {
+  display: none;
+}
